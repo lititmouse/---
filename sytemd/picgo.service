@@ -1,0 +1,14 @@
+[unit]
+Description=picgo-aappimage
+Documentation=https://picgo.github.io/PicGo-Doc/
+After=multi-user.target
+
+[install]
+WantedBy=graphical.target
+
+
+[service]
+Type=simple
+RemainAfterExit=false
+ExecStart= /usr/local/games/PicGo-2.3.0.AppImage
+User=root
